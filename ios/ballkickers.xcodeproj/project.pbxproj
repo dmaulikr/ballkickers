@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		938C39C91666C5320072CE8F /* libpointcloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938C39C71666C5320072CE8F /* libpointcloud.a */; };
 		93C801D51666BF2A0057BCAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C801D41666BF2A0057BCAE /* UIKit.framework */; };
 		93C801D71666BF2A0057BCAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C801D61666BF2A0057BCAE /* Foundation.framework */; };
 		93C801D91666BF2A0057BCAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C801D81666BF2A0057BCAE /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		938C39C71666C5320072CE8F /* libpointcloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpointcloud.a; sourceTree = "<group>"; };
+		938C39C81666C5320072CE8F /* PointCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCloud.h; sourceTree = "<group>"; };
 		93C801D01666BF2A0057BCAE /* ballkickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ballkickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C801D41666BF2A0057BCAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93C801D61666BF2A0057BCAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,15 +45,26 @@
 				93C801D51666BF2A0057BCAE /* UIKit.framework in Frameworks */,
 				93C801D71666BF2A0057BCAE /* Foundation.framework in Frameworks */,
 				93C801D91666BF2A0057BCAE /* CoreGraphics.framework in Frameworks */,
+				938C39C91666C5320072CE8F /* libpointcloud.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		938C39C51666C4AE0072CE8F /* PointCloudSDK */ = {
+			isa = PBXGroup;
+			children = (
+				938C39C71666C5320072CE8F /* libpointcloud.a */,
+				938C39C81666C5320072CE8F /* PointCloud.h */,
+			);
+			path = PointCloudSDK;
+			sourceTree = "<group>";
+		};
 		93C801C51666BF2A0057BCAE = {
 			isa = PBXGroup;
 			children = (
+				938C39C51666C4AE0072CE8F /* PointCloudSDK */,
 				93C801DA1666BF2A0057BCAE /* ballkickers */,
 				93C801D31666BF2A0057BCAE /* Frameworks */,
 				93C801D11666BF2A0057BCAE /* Products */,
@@ -241,6 +255,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ballkickers/ballkickers-Prefix.pch";
 				INFOPLIST_FILE = "ballkickers/ballkickers-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PointCloudSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -252,6 +270,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ballkickers/ballkickers-Prefix.pch";
 				INFOPLIST_FILE = "ballkickers/ballkickers-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PointCloudSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

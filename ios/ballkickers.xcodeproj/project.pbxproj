@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		938C39C91666C5320072CE8F /* libpointcloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938C39C71666C5320072CE8F /* libpointcloud.a */; };
+		938C39CC1666C7380072CE8F /* HardwareController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 938C39CB1666C7380072CE8F /* HardwareController.mm */; };
+		938C39CF1666C7A70072CE8F /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C39CE1666C7A70072CE8F /* GLView.m */; };
+		938C39D41666CB7F0072CE8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938C39D21666CB680072CE8F /* QuartzCore.framework */; };
+		938C39D51666CB7F0072CE8F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938C39D01666CB5E0072CE8F /* OpenGLES.framework */; };
 		93C801D51666BF2A0057BCAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C801D41666BF2A0057BCAE /* UIKit.framework */; };
 		93C801D71666BF2A0057BCAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C801D61666BF2A0057BCAE /* Foundation.framework */; };
 		93C801D91666BF2A0057BCAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C801D81666BF2A0057BCAE /* CoreGraphics.framework */; };
@@ -22,6 +26,12 @@
 /* Begin PBXFileReference section */
 		938C39C71666C5320072CE8F /* libpointcloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpointcloud.a; sourceTree = "<group>"; };
 		938C39C81666C5320072CE8F /* PointCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCloud.h; sourceTree = "<group>"; };
+		938C39CA1666C7380072CE8F /* HardwareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardwareController.h; sourceTree = "<group>"; };
+		938C39CB1666C7380072CE8F /* HardwareController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HardwareController.mm; sourceTree = "<group>"; };
+		938C39CD1666C7A70072CE8F /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		938C39CE1666C7A70072CE8F /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		938C39D01666CB5E0072CE8F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		938C39D21666CB680072CE8F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		93C801D01666BF2A0057BCAE /* ballkickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ballkickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C801D41666BF2A0057BCAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93C801D61666BF2A0057BCAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938C39D41666CB7F0072CE8F /* QuartzCore.framework in Frameworks */,
+				938C39D51666CB7F0072CE8F /* OpenGLES.framework in Frameworks */,
 				93C801D51666BF2A0057BCAE /* UIKit.framework in Frameworks */,
 				93C801D71666BF2A0057BCAE /* Foundation.framework in Frameworks */,
 				93C801D91666BF2A0057BCAE /* CoreGraphics.framework in Frameworks */,
@@ -82,6 +94,8 @@
 		93C801D31666BF2A0057BCAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				938C39D21666CB680072CE8F /* QuartzCore.framework */,
+				938C39D01666CB5E0072CE8F /* OpenGLES.framework */,
 				93C801D41666BF2A0057BCAE /* UIKit.framework */,
 				93C801D61666BF2A0057BCAE /* Foundation.framework */,
 				93C801D81666BF2A0057BCAE /* CoreGraphics.framework */,
@@ -95,6 +109,10 @@
 				93C801E31666BF2A0057BCAE /* AppDelegate.h */,
 				93C801E41666BF2A0057BCAE /* AppDelegate.m */,
 				93C801DB1666BF2A0057BCAE /* Supporting Files */,
+				938C39CA1666C7380072CE8F /* HardwareController.h */,
+				938C39CB1666C7380072CE8F /* HardwareController.mm */,
+				938C39CD1666C7A70072CE8F /* GLView.h */,
+				938C39CE1666C7A70072CE8F /* GLView.m */,
 			);
 			path = ballkickers;
 			sourceTree = "<group>";
@@ -180,6 +198,8 @@
 			files = (
 				93C801E11666BF2A0057BCAE /* main.m in Sources */,
 				93C801E51666BF2A0057BCAE /* AppDelegate.m in Sources */,
+				938C39CC1666C7380072CE8F /* HardwareController.mm in Sources */,
+				938C39CF1666C7A70072CE8F /* GLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +239,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -241,7 +261,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -255,6 +275,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ballkickers/ballkickers-Prefix.pch";
 				INFOPLIST_FILE = "ballkickers/ballkickers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/PointCloudSDK\"",
@@ -270,6 +291,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ballkickers/ballkickers-Prefix.pch";
 				INFOPLIST_FILE = "ballkickers/ballkickers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/PointCloudSDK\"",

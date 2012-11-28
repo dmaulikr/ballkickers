@@ -1,22 +1,15 @@
-//
-//  AppDelegate.m
-//  ballkickers
-//
-//  Created by Rudy Jahchan on 11/28/12.
-//  Copyright (c) 2012 Rudy Jahchan. All rights reserved.
-//
-
 #import "AppDelegate.h"
+#import "HardwareController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.window.rootViewController = [[HardwareController alloc] initWithCoder:nil];
+  self.window.backgroundColor = [UIColor whiteColor];
+  [self.window makeKeyAndVisible];
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

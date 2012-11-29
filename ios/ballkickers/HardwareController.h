@@ -1,5 +1,8 @@
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface HardwareController : UIViewController
+#import "GLView.h"
+
+@interface HardwareController : UIViewController <GLViewDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 
 @end

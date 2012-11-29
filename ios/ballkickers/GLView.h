@@ -1,5 +1,14 @@
 #import <UIKit/UIKit.h>
 
-@interface GLView : UIView
+@protocol GLViewDelegate
+
+- (void)drawView:(UIView *)theView;
 
 @end
+
+@interface GLView : UIView
+
+@property (assign) id<GLViewDelegate>  delegate;
+
+@end
+

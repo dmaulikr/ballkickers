@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4454838C1666F05B00D29204 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4454838B1666F05B00D29204 /* AVFoundation.framework */; };
+		4454838E1666F07000D29204 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4454838D1666F07000D29204 /* CoreVideo.framework */; };
+		445483911666F07A00D29204 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4454838F1666F07A00D29204 /* CoreAudio.framework */; };
+		445483921666F07A00D29204 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445483901666F07A00D29204 /* CoreMedia.framework */; };
 		938C39C91666C5320072CE8F /* libpointcloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938C39C71666C5320072CE8F /* libpointcloud.a */; };
 		938C39CC1666C7380072CE8F /* HardwareController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 938C39CB1666C7380072CE8F /* HardwareController.mm */; };
 		938C39CF1666C7A70072CE8F /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C39CE1666C7A70072CE8F /* GLView.m */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4454838B1666F05B00D29204 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4454838D1666F07000D29204 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4454838F1666F07A00D29204 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		445483901666F07A00D29204 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		938C39C71666C5320072CE8F /* libpointcloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpointcloud.a; sourceTree = "<group>"; };
 		938C39C81666C5320072CE8F /* PointCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCloud.h; sourceTree = "<group>"; };
 		938C39CA1666C7380072CE8F /* HardwareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardwareController.h; sourceTree = "<group>"; };
@@ -52,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445483911666F07A00D29204 /* CoreAudio.framework in Frameworks */,
+				445483921666F07A00D29204 /* CoreMedia.framework in Frameworks */,
+				4454838E1666F07000D29204 /* CoreVideo.framework in Frameworks */,
+				4454838C1666F05B00D29204 /* AVFoundation.framework in Frameworks */,
 				938C39D41666CB7F0072CE8F /* QuartzCore.framework in Frameworks */,
 				938C39D51666CB7F0072CE8F /* OpenGLES.framework in Frameworks */,
 				93C801D51666BF2A0057BCAE /* UIKit.framework in Frameworks */,
@@ -94,6 +106,10 @@
 		93C801D31666BF2A0057BCAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4454838F1666F07A00D29204 /* CoreAudio.framework */,
+				445483901666F07A00D29204 /* CoreMedia.framework */,
+				4454838D1666F07000D29204 /* CoreVideo.framework */,
+				4454838B1666F05B00D29204 /* AVFoundation.framework */,
 				938C39D21666CB680072CE8F /* QuartzCore.framework */,
 				938C39D01666CB5E0072CE8F /* OpenGLES.framework */,
 				93C801D41666BF2A0057BCAE /* UIKit.framework */,
